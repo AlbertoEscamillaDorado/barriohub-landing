@@ -1,4 +1,8 @@
 /* Ocultar el submenú */
+* {
+    margin:  0;
+}
+
 .submenu {
     display: none;
     position: absolute;
