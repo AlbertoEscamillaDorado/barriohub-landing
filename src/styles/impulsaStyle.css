@@ -1,0 +1,110 @@
+.impulsa {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--azul-claro) 0%, var(--naranja) 100%);
+  color: white;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.impulsa-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.impulsa-main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.impulsa-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.impulsa-spaces {
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.impulsa-space {
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.impulsa-space:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.impulsa-space h4 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.impulsa-space p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .impulsa {
+    min-height: auto;
+    padding: 60px 30px;
+  }
+  
+  .impulsa-main-title {
+    font-size: 2.3rem;
+  }
+  
+  .impulsa-intro {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .impulsa {
+    padding: 40px 20px;
+  }
+  
+  .impulsa-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .impulsa-intro {
+    font-size: 1rem;
+  }
+  
+  .impulsa-spaces {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .impulsa-space {
+    padding: 15px;
+  }
+  
+  .impulsa-space h4 {
+    font-size: 1rem;
+  }
+  
+  .impulsa-space p {
+    font-size: 0.85rem;
+  }
+}

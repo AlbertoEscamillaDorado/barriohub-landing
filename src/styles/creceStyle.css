@@ -1,0 +1,118 @@
+.crece {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--naranja);
+  color: white;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.crece-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.crece-main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.crece-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.crece-offerings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.crece-offering {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.crece-offering h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.crece-offering ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.crece-offering li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.crece-offering li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .crece {
+    min-height: auto;
+    padding: 60px 30px;
+  }
+  
+  .crece-main-title {
+    font-size: 2.3rem;
+  }
+  
+  .crece-intro {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .crece {
+    padding: 40px 20px;
+  }
+  
+  .crece-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .crece-intro {
+    font-size: 1rem;
+  }
+  
+  .crece-offerings {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .crece-offering {
+    padding: 20px;
+  }
+  
+  .crece-offering h4 {
+    font-size: 1.2rem;
+  }
+  
+  .crece-offering li {
+    font-size: 0.95rem;
+  }
+}

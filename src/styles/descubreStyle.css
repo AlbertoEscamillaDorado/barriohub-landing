@@ -1,0 +1,105 @@
+/* Sección Descubre */
+.descubre {
+  width: 100%;
+  min-height: 600px;
+  background-color: var(--azul-oscuro);
+  color: white;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.descubre-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.descubre-main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.descubre-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.descubre-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.descubre-value {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid var(--naranja);
+}
+
+.descubre-value h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--naranja);
+}
+
+.descubre-value p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .descubre {
+    min-height: auto;
+    padding: 60px 30px;
+  }
+  
+  .descubre-main-title {
+    font-size: 2.3rem;
+  }
+  
+  .descubre-intro {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .descubre {
+    padding: 40px 20px;
+  }
+  
+  .descubre-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .descubre-intro {
+    font-size: 1rem;
+  }
+  
+  .descubre-values {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .descubre-value {
+    padding: 20px;
+  }
+  
+  .descubre-value h4 {
+    font-size: 1.1rem;
+  }
+  
+  .descubre-value p {
+    font-size: 0.95rem;
+  }
+}
