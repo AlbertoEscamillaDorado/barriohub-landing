@@ -5,6 +5,7 @@
     flex-direction: row;
     border: 1px solid black;
     background-color: var(--azul-oscuro);
+}
 /* Ocultar el submenú */
 * {
     margin:  0;
@@ -106,4 +107,3 @@ a {
 .menu a:hover {
     opacity: 0.6;
 }
-
