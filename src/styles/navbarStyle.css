@@ -1,26 +1,33 @@
-/* Ocultar el submenú */
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    list-style: none;
-    padding: 0;
+/* Social css (encima del nav)*/
+.top-nav {
+    display: grid;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    background-color: var(--azul-oscuro);
 }
-
-/* Mostrar submenú al hacer hover */
-.dropdown:hover .submenu {
-    display: block;
+.icon {
+    width: auto;
+    height: 30px;
+    margin: 0 10px;
 }
-
-/* Estilos básicos para el menú principal */
-.menu {
-    list-style: none;
-    margin: 0;
+.icons {
+    display: flex;
+    align-items: center;
+    grid-column: span 2 / span 2;
 }
-.menu li {
-    display: inline-block;
-    padding: 10px;
-    position: relative;
+.div-contacto {
+    display: flex;
+    align-items: center;
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 /* Estilos básicos para el nav */
@@ -58,6 +65,32 @@
     color: var(--azul-oscuro);
     font-weight: bold;
     font-size: large;
+}
+
+/* Css del submenú*/
+/* Ocultar el submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    list-style: none;
+    padding: 0;
+}
+
+/* Mostrar submenú al hacer hover */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Estilos básicos para el menú principal */
+.menu {
+    list-style: none;
+    margin: 0;
+}
+.menu li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
 }
 .menu a:hover {
     opacity: 0.6;
