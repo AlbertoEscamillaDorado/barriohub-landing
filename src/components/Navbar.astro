@@ -1,6 +1,7 @@
 ---
 const currentPath = Astro.url.pathname;
-import '../styles/navbarStyle.css';
+import Menu from "./Menu.astro";
+import "../styles/navbarStyle.css";
 ---
 
 
@@ -8,19 +9,30 @@ import '../styles/navbarStyle.css';
     <div class="nav-logo">
         <img src="images/imagotipoBarriohub.png" alt="BarrioHub Logo" class="imagotipo"/>
     </div>
-    <div class="nav-links">
+
+    <Menu />
+
+    <div class="nav-links" id="main-menu">
         <ul class="menu">
-            <li><a href="" class="nav-button"> Inicio </a></li>
+            <li><a href="/" class="nav-button"> Inicio </a></li>
             <li><a href="" class="nav-button"> Descubre </a></li>
             <li class="dropdown nav-button">
                 <a href="Impulsa" class="nav-button">Impulsa ↓</a>
                 <ul class="submenu">
                     <li><a href="" class="nav-button">Boxes privados</a></li>
-                    <li><a href="" class="nav-button">Salas de formación</a></li>
-                    <li><a href="" class="nav-button">Salas de reuniones</a></li>
+                    <li>
+                        <a href="" class="nav-button">Salas de formación</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-button">Salas de reuniones</a>
+                    </li>
                     <li><a href="" class="nav-button">Sala de Podcast</a></li>
-                    <li><a href="" class="nav-button">Espacio para eventos</a></li>
-                    <li><a href="" class="nav-button">Galeria de imágenes</a></li>
+                    <li>
+                        <a href="" class="nav-button">Espacio para eventos</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-button">Galeria de imágenes</a>
+                    </li>
                 </ul>
             </li>
             <li class="dropdown nav-button">
