@@ -60,26 +60,31 @@ const puntos = [
 ];
 ---
 
-<div class="crece-membresia">
+<div class="crece-offering">
   <div class="crece-membresia-texto">
-    <h4>membresia <br /> {membresia}</h4>
-    {
-      puntos.map((grupo) => (
-        <div class="crece-membresia-lista">
-          <h4
-            class={`${membresia} ${grupo.cambiable ? "cambiable" : ""} crece-membresia-titulo`}
-          >
-            {grupo.titulo}
-          </h4>
-          {grupo.items.length > 0 && (
-            <ul class={`${membresia} ${grupo.cambiable ? "cambiable" : ""}`}>
-              {grupo.items.map((item) => (
-                <li class="crece-membresia-punto">{item}</li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ))
-    }
+    <h4>membresia <br/> {membresia}</h4>
+    <div class="crece-membresia-lista">
+      {
+        puntos.map((grupo) => (
+          <div class="crece-membresia-puntos">
+            <h4
+              class={`${membresia} ${grupo.cambiable ? "cambiable" : ""} crece-membresia-titulo`}
+            >
+              {grupo.titulo}
+            </h4>
+            {grupo.items.length > 0 &&(
+              <ul class={`${membresia} ${grupo.cambiable ? "cambiable" : ""}`}>
+                {grupo.items.map((item) => (
+                  <li class="crece-membresia-punto">{item}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <div>
+    <button class="crece-membresia-boton">Adquirir ahora</button>
   </div>
 </div>
