@@ -1,23 +1,20 @@
 ---
 import Nav from "../components/Navbar.astro";
-import Menu from "../components/Menu.astro";
 import "../scripts/menu.js";
+import "../styles/navbarStyle.css";
+import "../styles/colores.css";
+import "../styles/mainStyle.css";
+import "../styles/introduccionStyle.css";
+import "../styles/heroStyle.css";
+import "../styles/descubreStyle.css";
+import "../styles/impulsaStyle.css";
+import "../styles/creceStyle.css";
+import "../styles/formularioStyle.css";
+import "../styles/contactoStyle.css";
 ---
 
 <html lang="es">
   <head>
-    <style is:global>
-      @import "../styles/navbarStyle.css";
-      @import "../styles/colores.css";
-      @import "../styles/mainStyle.css";
-      @import "../styles/introduccionStyle.css";
-      @import "../styles/heroStyle.css";
-      @import "../styles/descubreStyle.css";
-      @import "../styles/impulsaStyle.css";
-      @import "../styles/creceStyle.css";
-      @import "../styles/formularioStyle.css";
-      @import "../styles/contactoStyle.css";
-    </style>
     <meta charset="utf-8" />
     <link
       rel="icon"
@@ -34,6 +31,9 @@ import "../scripts/menu.js";
     <main>
       <slot />
     </main>
-    <script type="module" src="../scripts/menu.js"></script>
+    <script>
+      import "../scripts/menu.js";
+      import "../scripts/navbar.js";
+    </script>
   </body>
 </html>
