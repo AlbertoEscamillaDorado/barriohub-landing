@@ -1,7 +1,6 @@
 ---
 const currentPath = Astro.url.pathname;
 import Menu from "./Menu.astro";
-import "../styles/navbarStyle.css";
 ---
 
 
@@ -14,10 +13,10 @@ import "../styles/navbarStyle.css";
 
     <div class="nav-links" id="main-menu">
         <ul class="menu">
-            <li><a href="/" class="nav-button"> Inicio </a></li>
-            <li><a href="" class="nav-button"> Descubre </a></li>
-            <li><a href="/Impulsa/" class="nav-button">Impulsa</a></li>
-            <li><a href="/" class="nav-button">Crece</a></li>
+            <li><a href="" class="nav-button"> Inicio </a></li>
+            <li><a href="#descubre" class="nav-button"> Descubre </a></li>
+            <li><a href="#impulsa" class="nav-button">Impulsa</a></li>
+            <li><a href="#crece" class="nav-button">Crece</a></li>
         </ul>
     </div>
 </nav>
