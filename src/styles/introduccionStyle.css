@@ -5,7 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-claro) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--azul-oscuro) 0%,
+    var(--azul-claro) 100%
+  );
   color: white;
   box-sizing: border-box;
   border: none;
@@ -18,7 +22,6 @@
   margin-right: 850px;
   margin-left: 100px;
 }
-
 
 .introduccion-label {
   font-size: 0.875rem;
@@ -47,7 +50,7 @@
   .introduccion-title {
     font-size: 4rem;
   }
-  
+
   .introduccion-subtitle {
     font-size: 1.25rem;
   }
@@ -58,21 +61,21 @@
     height: auto;
     min-height: 70vh;
   }
-  
+
   .introduccion-title {
     font-size: 3rem;
   }
-  
+
   .introduccion-subtitle {
     font-size: 1rem;
   }
 }
-  
+
 @media (max-width: 480px) {
   .introduccion-title {
     font-size: 1.8rem;
   }
-  
+
   .introduccion-subtitle {
     font-size: 1rem;
   }
