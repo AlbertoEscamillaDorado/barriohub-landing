@@ -16,7 +16,11 @@
 .formulario-wrapper {
   max-width: 600px;
   margin: 0 auto;
-  background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-claro) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--azul-oscuro) 0%,
+    var(--azul-claro) 100%
+  );
   color: white;
   padding: 60px 40px;
   border-radius: 12px;
@@ -58,7 +62,9 @@
   font-family: inherit;
   background-color: rgba(255, 255, 255, 0.95);
   color: #333;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
 }
 
 .form-input::placeholder,
@@ -94,7 +100,7 @@
 }
 
 .form-button:hover {
-  background-color: #FF8C00;
+  background-color: #ff8c00;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(247, 148, 28, 0.3);
 }
@@ -108,25 +114,25 @@
     padding: 40px 20px;
     min-height: auto;
   }
-  
+
   .formulario-wrapper {
     padding: 40px 25px;
   }
-  
+
   .formulario-title {
     font-size: 1.8rem;
   }
-  
+
   .formulario-subtitle {
     font-size: 0.95rem;
   }
-  
+
   .form-input,
   .form-textarea {
     padding: 12px 14px;
     font-size: 0.95rem;
   }
-  
+
   .form-button {
     padding: 12px 25px;
     font-size: 1rem;
