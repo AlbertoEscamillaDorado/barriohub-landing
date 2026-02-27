@@ -11,6 +11,7 @@ import "../styles/creceStyle.css";
 import "../styles/formularioStyle.css";
 import "../styles/contactoStyle.css";
 import "../styles/search.css";
+import "../styles/carrusel.css";
 ---
 
 <html lang="es">
@@ -18,7 +19,7 @@ import "../styles/search.css";
     <meta charset="utf-8" />
     <link
       rel="icon"
-      type="image/svg+xml"
+      type="/image/svg+xml"
       href="/barriohub-landing/favicon.svg"
     />
     <link rel="icon" href="/barriohub-landing/favicon.ico" />
@@ -31,10 +32,9 @@ import "../styles/search.css";
     <main>
       <slot />
     </main>
-    <script>
-      import "../scripts/menu.js";
-      import "../scripts/navbar.js";
-      import "../scripts/search.js";
-    </script>
+    <script type="module" src="/barriohub-landing/scripts/menu.js"></script>
+    <script type="module" src="/barriohub-landing/scripts/navbar.js"></script>
+    <script type="module" src="/barriohub-landing/scripts/carrusel.js"></script>
+    <script type="module" src="/barriohub-landing/scripts/search.js"></script>
   </body>
 </html>
