@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-
 }
 
 .descubre-container {
@@ -56,8 +55,8 @@
 
 .descubre-image-placeholder {
   width: 100%;
-  max-width: 900px;      /* controla el tamaño visual */
-  aspect-ratio: 16/9;    /* mantiene proporción */  
+  max-width: 900px; /* controla el tamaño visual */
+  aspect-ratio: 16/9; /* mantiene proporción */
   overflow: hidden;
   background-color: #e8e8e8;
   margin: auto;
@@ -89,12 +88,12 @@
 }
 
 .descubre-value-title {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--azul-claro);
   align-self: center;
+  text-decoration: underline;
 }
 
 .descubre-value-text {
@@ -112,6 +111,9 @@
   letter-spacing: 1px;
   margin: 30px 0 0 0;
   padding-top: 40px;
+  text-shadow:
+    3px 3px 6px rgba(0, 0, 0, 0.6),
+    0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1024px) {
