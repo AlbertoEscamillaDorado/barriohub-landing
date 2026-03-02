@@ -173,8 +173,14 @@
     border-color 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: 850px;
+  height: 750px;
+  width: 450px;
 
+}
+
+.card-front img{
+  height: 400px;
+  width: auto;
 }
 
 .card-inner {
